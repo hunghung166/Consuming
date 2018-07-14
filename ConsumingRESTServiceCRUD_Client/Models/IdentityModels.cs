@@ -29,5 +29,7 @@ namespace ConsumingRESTServiceCRUD_Client.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ConsumingRESTServiceCRUD_Client.Models.Employee> Employees { get; set; }
     }
 }

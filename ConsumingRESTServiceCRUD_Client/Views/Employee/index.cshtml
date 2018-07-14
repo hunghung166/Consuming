@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <fieldset>
+        <legend>List Employee</legend>
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Department</th>
+            </tr>
+
+            @foreach(var b in ViewBag.listEmployees)
+            {
+            <tr>
+                <td>@b.Name</td>
+                <td>@b.Salary</td>
+                <td>@b.Department</td>
+            </tr>
+            }
+        </table>
+    </fieldset>
+</body>
+</html>
